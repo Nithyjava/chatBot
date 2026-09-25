@@ -389,17 +389,9 @@ async def websocket_endpoint(
             websocket
         )
 
-        print(
-            "Client disconnected"
-        )
-
-
+        print("Client disconnected")
     except Exception as e:
-
-        manager.disconnect(
-            websocket
-        )
-
+        manager.disconnect(websocket)
         print(
             "WebSocket error:",
             str(e)
